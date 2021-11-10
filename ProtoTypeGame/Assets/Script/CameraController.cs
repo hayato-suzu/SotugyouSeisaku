@@ -6,14 +6,15 @@ public class CameraController : MonoBehaviour
 {
     private Vector2 LastMousePosition;
 
-    private float BaseCameraAngle;
-    private float BaseCameraDistance;
-    private float BaseCameraHeight;
-    private float RotaLim = 0.5f;
+    private float BaseCameraAngle;          //カメラの初期角度
+    private float BaseCameraDistance;       //半径
+    private float BaseCameraHeight;         //カメラの初期Y座標
+    private float RotaLim = 0.5f;           //仰角・俯角の上限
 
     // Start is called before the first frame update
     void Start()
     {
+        //--------カメラの初期状態を取得--------
         BaseCameraAngle = transform.rotation.x;
         BaseCameraDistance = transform.localPosition.z;
         BaseCameraHeight = transform.localPosition.y;
