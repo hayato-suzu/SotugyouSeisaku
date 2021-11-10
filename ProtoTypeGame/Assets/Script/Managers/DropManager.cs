@@ -21,7 +21,7 @@ public class DropManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.transform.position.y < -10)
+        if (player.transform.position.y < -13)
         {
             restart.PrintGameOver();
         }
