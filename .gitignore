@@ -14,10 +14,12 @@
 /ProtoTypeGame/Assets/Starfield Skybox/
 /ProtoTypeGame/Assets/TextMesh Pro/
 /ProtoTypeGame/Assets/LowlyPoly/
+/ProtoTypeGame/Assets/EffectExamples/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 /ProtoTypeGame/Assets/LowlyPoly.meta
+/ProtoTypeGame/Assets/EffectExamples.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
