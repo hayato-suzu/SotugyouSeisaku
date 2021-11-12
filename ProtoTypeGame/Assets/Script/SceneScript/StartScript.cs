@@ -8,7 +8,7 @@ public class StartScript : MonoBehaviour
     //ボタンを押すとGameSceneに移る
     public void OnClickStartButton()
     {
-        SceneManager.LoadScene("SelectScene");
+        SceneManager.LoadScene("SelectScene2");
     }
     //ボタンを押すとMenuSceneに移る
     public void OnClickMenuButton()
@@ -18,6 +18,6 @@ public class StartScript : MonoBehaviour
     //ボタンを押すとTitleSceneに移る
     public void OnClickTitleButton()
     {
-        SceneManager.LoadScene("TitleScene");
+        SceneManager.LoadScene("TitleScene2");
     }
 }
