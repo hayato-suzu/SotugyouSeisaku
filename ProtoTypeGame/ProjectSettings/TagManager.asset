@@ -9,6 +9,7 @@ TagManager:
   - Switch_Base
   - SF_Door
   - Ground
+  - wall
   layers:
   - Default
   - TransparentFX
