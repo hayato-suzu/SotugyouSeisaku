@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -521,6 +521,7 @@ GameObject:
   - component: {fileID: 118777254}
   - component: {fileID: 118777253}
   - component: {fileID: 118777252}
+  - component: {fileID: 118777257}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -540,7 +541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e33ce6c58be9d7244be431111813d5de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cube2: {fileID: 212885054}
+  WarpArea: {fileID: 212885054}
 --- !u!65 &118777253
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -617,6 +618,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &118777257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118777251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850f5630a0f61384aacfaadf036a9536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &120372154
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,7 +752,7 @@ GameObject:
   - component: {fileID: 212885057}
   - component: {fileID: 212885056}
   m_Layer: 0
-  m_Name: Cube2
+  m_Name: WarpArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
