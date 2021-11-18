@@ -9,6 +9,7 @@ TagManager:
   - Switch_Base
   - SF_Door
   - Ground
+  - CreateCube
   layers:
   - Default
   - TransparentFX
