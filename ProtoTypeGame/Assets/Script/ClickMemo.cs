@@ -10,7 +10,7 @@ public class ClickMemo : MonoBehaviour
     private void OnMouseDown()
     {
         //textを表示する
-        message.text = "初期パスワード\n0123";
+        message.text = "このオブジェクトに触れると\n特定の位置にワープできるよ！";
 
         StartCoroutine("TextSet");
     }
