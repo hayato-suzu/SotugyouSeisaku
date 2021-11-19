@@ -37,7 +37,9 @@ public class PuzzleScript : MonoBehaviour
     //生成した数のカウント
      int CubeCount = 0;
     //生成できる最大数
-    private int CubeCountMax = 2;
+    public int CubeCountMax = 2;
+
+    GameObject[] CreateCube = new GameObject[2];
 
     private void Start()
     {
@@ -56,18 +58,17 @@ public class PuzzleScript : MonoBehaviour
         puzzlemessage.text = "二個まで生成できます";
         CountText.text = "あと" + CubeCountMax + "個";
         PuzzlePanel.SetActive(true);
-        //StartCoroutine("TextSet");
     }
 
     //リセットボタン
     public void ResetButtonClick()
     {
-        GameObject[] objects = GameObject.FindGameObjectsWithTag("CreateCube");
-        foreach(GameObject Cube in objects)
+        for(int i = 0;i<CubeCount;i++)
         {
-            Destroy(Cube);
-            CubeCount = 0;
+            Destroy(CreateCube[i]);
+
         }
+        CubeCount = 0;
     }
     //赤ボタン
     public void RedButtonClick()
@@ -78,7 +79,7 @@ public class PuzzleScript : MonoBehaviour
             float y = Random.Range(RangeA.position.y, RangeB.position.y);
             float z = Random.Range(RangeA.position.z, RangeB.position.z);
 
-            Instantiate(RedCube, new Vector3(x, y, z), RedCube.transform.rotation);
+            CreateCube[CubeCount] = Instantiate(RedCube, new Vector3(x, y, z), RedCube.transform.rotation);
             CubeCount++;
         }
     }
@@ -92,7 +93,7 @@ public class PuzzleScript : MonoBehaviour
             float y = Random.Range(RangeA.position.y, RangeB.position.y);
             float z = Random.Range(RangeA.position.z, RangeB.position.z);
 
-            Instantiate(BlueCube, new Vector3(x, y, z), BlueCube.transform.rotation);
+            CreateCube[CubeCount] = Instantiate(BlueCube, new Vector3(x, y, z), BlueCube.transform.rotation);
             CubeCount++;
         }
     }
@@ -105,7 +106,7 @@ public class PuzzleScript : MonoBehaviour
             float y = Random.Range(RangeA.position.y, RangeB.position.y);
             float z = Random.Range(RangeA.position.z, RangeB.position.z);
 
-            Instantiate(GreenCube, new Vector3(x, y, z), GreenCube.transform.rotation);
+            CreateCube[CubeCount] = Instantiate(GreenCube, new Vector3(x, y, z), GreenCube.transform.rotation);
             CubeCount++;
         }
     }
