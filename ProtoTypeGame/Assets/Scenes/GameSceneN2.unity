@@ -2129,7 +2129,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 60c67e2e2481dec4cb413779f3166ed5, type: 2}
+  - {fileID: 2100000, guid: 71e31f6d8a92e90418bd3396f90b5710, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8987,6 +8987,7 @@ GameObject:
   - component: {fileID: 2112613769}
   - component: {fileID: 2112613771}
   - component: {fileID: 2101844282}
+  - component: {fileID: 2101844284}
   m_Layer: 0
   m_Name: unitychan
   m_TagString: Player
@@ -9022,6 +9023,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2101844284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101844281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f04b81292f1724b89b3b5ebadd4502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MultiPlayer: 2
 --- !u!1 &2101844289
 GameObject:
   m_ObjectHideFlags: 0
