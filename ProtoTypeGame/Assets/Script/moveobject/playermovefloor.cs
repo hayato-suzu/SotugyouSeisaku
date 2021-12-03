@@ -6,23 +6,16 @@ public class playermovefloor : MonoBehaviour
 {
     private Rigidbody rb;
     public float upForce = 100f;
+    public GameObject MoveFloor;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
 
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            rb.AddForce(new Vector3(0, upForce, 0));
-        }
-    }
-
     void OnCollisionEnter(Collision col)
     {
-        if (transform.parent == null && col.gameObject.name == "movefloor")
+        if (transform.parent == null && col.gameObject.name == MoveFloor.name)
         {
             var emptyObject = new GameObject();
             emptyObject.transform.parent = col.gameObject.transform;
@@ -32,7 +25,7 @@ public class playermovefloor : MonoBehaviour
 
     void OnCollisionExit(Collision col)
     {
-        if (transform.parent != null && col.gameObject.name == "movefloor")
+        if (transform.parent != null && col.gameObject.name == MoveFloor.name)
         {
             transform.parent = null;
         }
