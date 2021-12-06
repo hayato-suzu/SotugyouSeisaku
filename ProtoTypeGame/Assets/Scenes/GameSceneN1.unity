@@ -5300,6 +5300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2101844281}
   text: {fileID: 737901398}
+  Drop: -13
 --- !u!4 &1352990816
 Transform:
   m_ObjectHideFlags: 0
