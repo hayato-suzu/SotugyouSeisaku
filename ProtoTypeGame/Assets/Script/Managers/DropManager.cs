@@ -8,6 +8,9 @@ public class DropManager : MonoBehaviour
     public GameObject player;
     public GameObject text;
 
+    //-Ç…ê›íËÇ∑ÇÈ
+    public float Drop = -13;
+
     //RestartManagerå^
     private RestartManager restart;
 
@@ -21,7 +24,7 @@ public class DropManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.transform.position.y < -13)
+        if (player.transform.position.y < Drop)
         {
             restart.PrintGameOver();
         }
