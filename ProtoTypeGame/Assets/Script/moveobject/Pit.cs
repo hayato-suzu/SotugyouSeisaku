@@ -8,9 +8,16 @@ public class Pit : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name == Player.name)
+        if (other.gameObject.name == Player.name)
         {
             Player.GetComponent<CapsuleCollider>().enabled = false;
+            Invoke("Exit",0.5f);
         }
+    }
+
+    private void Exit()
+    {
+        //Debug.Log("return");
+        Player.GetComponent<CapsuleCollider>().enabled = true;
     }
 }
