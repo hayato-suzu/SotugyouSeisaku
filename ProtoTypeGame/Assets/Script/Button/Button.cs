@@ -7,7 +7,7 @@ public class Button : MonoBehaviour
     //開けるアニメーション
     [SerializeField] Animation anim = default;
 
-    public void Open()
+    public void OpenAnim()
     {
         anim.Play("ButtonOpenDoor");
     }
