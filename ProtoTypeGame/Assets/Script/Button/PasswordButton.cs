@@ -6,6 +6,7 @@ public class PasswordButton : MonoBehaviour
 {
     //³‰ğ‚Æˆê’v‚µ‚Ä‚¢‚é‚©Šm”F
     //³‰ğ‚ÉŠJ‚¯‚é•ó” İ’è
+    //[SerializeField] OpenDoor button = default;
     [SerializeField] Button button = default;
 
     //³‰ğ”š
@@ -20,7 +21,7 @@ public class PasswordButton : MonoBehaviour
         {
             //button
             //Debug.Log("push");
-            button.Open();
+            button.OpenAnim();
         }
     }
 
