@@ -5,7 +5,7 @@ using UnityEngine;
 public class movefloor : MonoBehaviour
 {
     int counter = 0;
-    float move = 0.01f;
+    public float move = 0.01f;
 
     void Update()
     {
