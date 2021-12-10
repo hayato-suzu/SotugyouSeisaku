@@ -26,7 +26,7 @@ public class BulletScript : MonoBehaviour
         Force = transform.forward * 400;
         //íeÇ…óÕÇÇ©ÇØÇÈ
         Bullets.GetComponent<Rigidbody>().AddForce(Force);
-        //2ïbå„Ç…è¡Ç∑
-        Destroy(Bullets.gameObject, 2);
+        //3ïbå„Ç…è¡Ç∑
+        Destroy(Bullets.gameObject, 2.5f);
     }
 }
