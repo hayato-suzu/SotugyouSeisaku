@@ -1,15 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityChan;
 using UnityEngine.SceneManagement;
 
-public class Dead : MonoBehaviour
+public class DeadGround : MonoBehaviour
 {
-    public GameObject player;
+    //オブジェクトのスピード
+    public float speed = 0.005f;
 
+    //オブジェクトの横移動最大値
+    public float max_y = 1.0f;
+
+    //ユニティちゃん格納変数
+    public GameObject player;
+    //テキスト格納変数
     public GameObject text;
 
+    //ゲームオーバー判定
     private RestartManager restart;
 
     // Start is called before the first frame update
@@ -19,9 +26,18 @@ public class Dead : MonoBehaviour
         restart = new RestartManager(player, text);
     }
 
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
-        //ゲームオーバー状態で画面クリック
+        //フレーム毎speedの値分だけy軸方向に移動する
+        this.gameObject.transform.Translate(0, speed, 0);
+
+        //Transformのx値が一定値を超えたときに向きを反対にする
+        if (this.gameObject.transform.position.y > max_y || this.gameObject.transform.position.y < (-max_y))
+        {
+            speed *= -1;
+        }
+
         if (restart.IsGameOver() && Input.GetMouseButton(0))
         {
             Restart();
@@ -29,19 +45,11 @@ public class Dead : MonoBehaviour
     }
 
     //UnityChanの当たり判定
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.name == player.name)
-        {
-            //ゲームオーバー
-            restart.PrintGameOver();
-        }
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == player.name)
         {
+
             //ゲームオーバー
             restart.PrintGameOver();
         }
