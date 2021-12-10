@@ -30,6 +30,6 @@ public class Blink : MonoBehaviour
             mesh.material.color = mesh.material.color + new Color32(0, 0, 0, 1);
             yield return new WaitForSeconds(0.01f);
         }
-        StartCoroutine("Blink");
+        StartCoroutine("Blinking");
     }
 }
