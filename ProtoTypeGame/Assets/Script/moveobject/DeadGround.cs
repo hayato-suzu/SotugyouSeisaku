@@ -14,7 +14,7 @@ public class DeadGround : MonoBehaviour
     //ユニティちゃん格納変数
     public GameObject player;
     //テキスト格納変数
-    public GameObject text;
+    public GameObject image;
 
     //ゲームオーバー判定
     private RestartManager restart;
@@ -23,7 +23,7 @@ public class DeadGround : MonoBehaviour
     void Start()
     {
         //インスタンス生成
-        restart = new RestartManager(player, text);
+        restart = new RestartManager(player, image);
     }
 
     // Update is called once per frame
@@ -37,11 +37,11 @@ public class DeadGround : MonoBehaviour
         {
             speed *= -1;
         }
+    }
 
-        if (restart.IsGameOver() && Input.GetMouseButton(0))
-        {
-            Restart();
-        }
+    public void ButtonRestart()
+    {
+        Restart();
     }
 
     //UnityChanの当たり判定

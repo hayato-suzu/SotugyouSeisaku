@@ -16,7 +16,7 @@ public class DeadWallController : MonoBehaviour
     //ユニティちゃん格納変数
     public GameObject player;
     //テキスト格納変数
-    public GameObject text;
+    public GameObject image;
 
     //ゲームオーバー判定
     private RestartManager restart;
@@ -25,7 +25,7 @@ public class DeadWallController : MonoBehaviour
     void Start()
     {
         //インスタンス生成
-        restart = new RestartManager(player, text);
+        restart = new RestartManager(player, image);
     }
 
     // Update is called once per frame
@@ -39,11 +39,11 @@ public class DeadWallController : MonoBehaviour
         {
             speed *= -1;
         }
+    }
 
-        if (restart.IsGameOver() && Input.GetMouseButton(0))
-        {
-            Restart();
-        }
+    public void ButtonRestart()
+    {
+        Restart();
     }
 
     //UnityChanの当たり判定
@@ -51,10 +51,6 @@ public class DeadWallController : MonoBehaviour
     {
         if (other.gameObject.name == player.name)
         {
-            //GameOver表示
-            //text.GetComponent<Text>().text = "GameOver...\n画面クリックでリスタート";
-            //text.SetActive(true);
-
             //動けなくする
             player.GetComponent<UnityChanControlScriptWithRgidBody>().enabled = false;
             //AnimationOff

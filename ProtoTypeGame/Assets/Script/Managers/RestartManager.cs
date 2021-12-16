@@ -10,23 +10,22 @@ public class RestartManager : MonoBehaviour
 {
     //格納する変数
     private GameObject player;
-    private GameObject text;
+    private GameObject image;
 
     private bool isGameOver = false;
 
     //コンストラクタ
-    public RestartManager(GameObject player,GameObject text)
+    public RestartManager(GameObject player,GameObject image)
     {
         //player,textをあらかじめ受け取る
         this.player = player;
-        this.text = text;
+        this.image = image;
     }
 
     public void PrintGameOver()
     {
         //GameOver表示
-        text.GetComponent<Text>().text = "GameOver\n画面クリックでリスタート";
-        text.SetActive(true);
+        image.SetActive(true);
 
         //UnityChanストップ
         player.GetComponent<UnityChanControlScriptWithRgidBody>().enabled = false;
