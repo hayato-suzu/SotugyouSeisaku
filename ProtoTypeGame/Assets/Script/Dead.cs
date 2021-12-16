@@ -8,7 +8,7 @@ public class Dead : MonoBehaviour
 {
     public GameObject player;
 
-    public GameObject text;
+    public GameObject image;
 
     private RestartManager restart;
 
@@ -16,16 +16,12 @@ public class Dead : MonoBehaviour
     void Start()
     {
         //インスタンス生成
-        restart = new RestartManager(player, text);
+        restart = new RestartManager(player, image);
     }
 
-    private void Update()
+    public void ButtonRestart()
     {
-        //ゲームオーバー状態で画面クリック
-        if (restart.IsGameOver() && Input.GetMouseButton(0))
-        {
-            Restart();
-        }
+        Restart();
     }
 
     //UnityChanの当たり判定
