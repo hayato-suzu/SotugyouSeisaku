@@ -1,30 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ClickMoveObject : MonoBehaviour
 {
     public GameObject MoveGroundGimmick;
     public GameObject ground;
+    public Text text;
     private float count = 0;
+    private float textcount=2;
+
+    private void Update()
+    {
+        text.text = "écÇË"+textcount+"âÒìÆÇ©ÇπÇÈÇÊÅI";
+    }
 
     public void UpButton()
     {
+        textcount--;
         StartCoroutine("UP");
     }
 
     public void LeftButton()
     {
+        textcount--;
         StartCoroutine("LEFT");
     }
 
     public void RightButton()
     {
+        textcount--;
         StartCoroutine("RIGHT");
     }
 
     public void DownButton()
     {
+        textcount--;
         StartCoroutine("DOWN");
     }
 
@@ -40,6 +52,7 @@ public class ClickMoveObject : MonoBehaviour
         {
             MoveGroundGimmick.SetActive(false);
             count = 0;
+            textcount = 2;
         }
     }
 
@@ -55,6 +68,7 @@ public class ClickMoveObject : MonoBehaviour
         {
             MoveGroundGimmick.SetActive(false);
             count = 0;
+            textcount = 2;
         }
     }
 
@@ -70,6 +84,7 @@ public class ClickMoveObject : MonoBehaviour
         {
             MoveGroundGimmick.SetActive(false);
             count = 0;
+            textcount = 2;
         }
     }
 
@@ -85,6 +100,7 @@ public class ClickMoveObject : MonoBehaviour
         {
             MoveGroundGimmick.SetActive(false);
             count = 0;
+            textcount = 2;
         }
     }
 }
