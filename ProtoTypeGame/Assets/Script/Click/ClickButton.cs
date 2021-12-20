@@ -11,7 +11,7 @@ public class ClickButton : MonoBehaviour
         MoveButton.SetActive(false);
     }
 
-    private void OnMouseDown()
+    private void OnTriggerEnter(Collider other)
     {
         MoveButton.SetActive(true);
     }
