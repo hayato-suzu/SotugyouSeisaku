@@ -6,12 +6,7 @@ public class ClickMoveObject : MonoBehaviour
 {
     public GameObject MoveGroundGimmick;
     public GameObject ground;
-    //private Rigidbody rigidbody;
-
-    private void Start()
-    {
-        //rigidbody = ground.GetComponent<Rigidbody>();
-    }
+    private float count = 0;
 
     public void UpButton()
     {
@@ -33,18 +28,18 @@ public class ClickMoveObject : MonoBehaviour
         StartCoroutine("DOWN");
     }
 
-    public void FinishButton()
-    {
-        MoveGroundGimmick.SetActive(false);
-    }
-
     IEnumerator UP()
     {
         for (int i = 0; i < 5; i++)
         {
-            //rigidbody.AddForce(new Vector3(0.0f, 0.0f, 100.0f));
             ground.transform.position = ground.transform.position += new Vector3(0, 0, 1);
             yield return new WaitForSeconds(0.05f);
+        }
+        count++;
+        if (count >= 2)
+        {
+            MoveGroundGimmick.SetActive(false);
+            count = 0;
         }
     }
 
@@ -52,19 +47,29 @@ public class ClickMoveObject : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            //rigidbody.AddForce(new Vector3(-100.0f, 0.0f, 0.0f));
             ground.transform.position = ground.transform.position += new Vector3(-1, 0, 0);
             yield return new WaitForSeconds(0.05f);
+        }
+        count++;
+        if (count >= 2)
+        {
+            MoveGroundGimmick.SetActive(false);
+            count = 0;
         }
     }
 
     IEnumerator RIGHT()
-    {
+    { 
         for (int i = 0; i < 5; i++)
         {
-            //rigidbody.AddForce(new Vector3(100.0f, 0.0f,0.0f));
             ground.transform.position = ground.transform.position += new Vector3(1, 0, 0);
             yield return new WaitForSeconds(0.05f);
+        }
+        count++;
+        if (count >= 2)
+        {
+            MoveGroundGimmick.SetActive(false);
+            count = 0;
         }
     }
 
@@ -72,9 +77,14 @@ public class ClickMoveObject : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            //rigidbody.AddForce(new Vector3(0.0f, 0.0f, -100.0f));
             ground.transform.position = ground.transform.position += new Vector3(0, 0, -1);
             yield return new WaitForSeconds(0.05f);
+        }
+        count++;
+        if (count >= 2)
+        {
+            MoveGroundGimmick.SetActive(false);
+            count = 0;
         }
     }
 }
