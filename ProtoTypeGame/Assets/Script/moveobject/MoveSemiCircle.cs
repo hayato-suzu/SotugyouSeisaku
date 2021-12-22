@@ -21,9 +21,9 @@ public class MoveSemiCircle : MonoBehaviour
 
     IEnumerator Rote2()
     {
-        for (int i = 180; i < 0; i--)
+        for (int i = 0; i < 180; i++)
         {
-            gameObject.transform.Rotate(new Vector3(0, 1, 0));
+            gameObject.transform.Rotate(new Vector3(0, -1, 0));
             yield return new WaitForSeconds(0.05f);
         }
         StartCoroutine("Rote1");

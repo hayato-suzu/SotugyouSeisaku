@@ -8,12 +8,14 @@ using UnityEngine.SceneManagement;
 public class BulletScript : MonoBehaviour
 {
     public GameObject Bullet;
+    public float time = 1.0f;
+    public float destroytime = 5.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        //1•bŒã‚É1•b‚²‚ÆShot‚Ìˆ—‚ğŒJ‚è•Ô‚·
-        InvokeRepeating("Shot", 1, 1);
+        //1•bŒã‚Étime•b‚²‚ÆShot‚Ìˆ—‚ğŒJ‚è•Ô‚·
+        InvokeRepeating("Shot", 1, time);
     }
 
     void Shot()
@@ -26,7 +28,7 @@ public class BulletScript : MonoBehaviour
         Force = transform.forward * 400;
         //’e‚É—Í‚ğ‚©‚¯‚é
         Bullets.GetComponent<Rigidbody>().AddForce(Force);
-        //3•bŒã‚ÉÁ‚·
-        Destroy(Bullets.gameObject, 2.5f);
+        //5•bŒã‚ÉÁ‚·
+        Destroy(Bullets.gameObject, destroytime);
     }
 }
