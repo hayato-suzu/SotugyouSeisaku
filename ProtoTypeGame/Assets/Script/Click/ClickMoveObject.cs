@@ -9,7 +9,8 @@ public class ClickMoveObject : MonoBehaviour
     public GameObject ground;
     public Text text;
     private float count = 0;
-    private float textcount=2;
+    public float textcount=2;
+    public float groundcount = 2;
 
     private void Update()
     {
@@ -48,7 +49,7 @@ public class ClickMoveObject : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
         }
         count++;
-        if (count >= 2)
+        if (count >= groundcount)
         {
             MoveGroundGimmick.SetActive(false);
             count = 0;
@@ -64,7 +65,7 @@ public class ClickMoveObject : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
         }
         count++;
-        if (count >= 2)
+        if (count >= groundcount)
         {
             MoveGroundGimmick.SetActive(false);
             count = 0;
@@ -80,7 +81,7 @@ public class ClickMoveObject : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
         }
         count++;
-        if (count >= 2)
+        if (count >= groundcount)
         {
             MoveGroundGimmick.SetActive(false);
             count = 0;
@@ -96,7 +97,7 @@ public class ClickMoveObject : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
         }
         count++;
-        if (count >= 2)
+        if (count >= groundcount)
         {
             MoveGroundGimmick.SetActive(false);
             count = 0;
