@@ -10,6 +10,7 @@ public class ClickMoveObject : MonoBehaviour
     public Text text;
     private float count = 0;
     public float textcount=2;
+    public float Starttextcount = 2;
     public float groundcount = 2;
 
     private void Update()
@@ -53,7 +54,7 @@ public class ClickMoveObject : MonoBehaviour
         {
             MoveGroundGimmick.SetActive(false);
             count = 0;
-            textcount = 2;
+            textcount = Starttextcount;
         }
     }
 
@@ -69,7 +70,7 @@ public class ClickMoveObject : MonoBehaviour
         {
             MoveGroundGimmick.SetActive(false);
             count = 0;
-            textcount = 2;
+            textcount = Starttextcount;
         }
     }
 
@@ -85,7 +86,7 @@ public class ClickMoveObject : MonoBehaviour
         {
             MoveGroundGimmick.SetActive(false);
             count = 0;
-            textcount = 2;
+            textcount = Starttextcount;
         }
     }
 
@@ -101,7 +102,7 @@ public class ClickMoveObject : MonoBehaviour
         {
             MoveGroundGimmick.SetActive(false);
             count = 0;
-            textcount = 2;
+            textcount = Starttextcount;
         }
     }
 }
