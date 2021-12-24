@@ -12,6 +12,8 @@ public class GoalManager : MonoBehaviour
     //TEXT格納変数  
     public GameObject text;
 
+    public GameObject Image;
+
     public GameObject limit;
 
     public GameObject Enemy;
@@ -30,11 +32,7 @@ public class GoalManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Goalした後で画面をクリックしたとき
-        if(isGoal && Input.GetMouseButton(0))
-        {
-            Restart();
-        }
+
     }
 
     //当たり判定関数
@@ -50,8 +48,9 @@ public class GoalManager : MonoBehaviour
             player.GetComponent<Animator>().enabled = false;
 
             //text内容をGOALに変更する
-            text.GetComponent<Text>().text = "GOAL\n画面クリックでリスタート";
-            text.SetActive(true);
+            //text.GetComponent<Text>().text = "GOAL\n画面クリックでリスタート";
+            //text.SetActive(true);
+            Image.SetActive(true);
 
             //Goal判定をtrueにする
             isGoal = true;

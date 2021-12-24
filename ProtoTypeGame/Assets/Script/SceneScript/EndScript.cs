@@ -26,6 +26,11 @@ public class EndScript : MonoBehaviour
         Restart();
     }
 
+    public void ButtonStart()
+    {
+        SceneManager.LoadScene("SelectScene2");
+    }
+
     //ƒV[ƒ“‚ğÄ“Ç‚İ‚İ
     private void Restart()
     {
