@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityChan;
+using UnityEngine.Video;
 
 public class GoalManager : MonoBehaviour
 {
@@ -11,8 +12,12 @@ public class GoalManager : MonoBehaviour
     public GameObject player;
     //TEXT格納変数  
     public GameObject text;
+    public GameObject Time;
 
     public GameObject Image;
+
+    public GameObject VideoPlane;
+    private float VideoPlay = 0;
 
     public GameObject limit;
 
@@ -20,19 +25,33 @@ public class GoalManager : MonoBehaviour
     //Goalしたかどうか判定する
     private bool isGoal = false;
 
+    VideoPlayer video;
+
     //RestartManager型
     private RestartManager restart;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        video = GetComponent<VideoPlayer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if(VideoPlay==1)
+        {
+            if (video.isPlaying)
+            {
+                video.Pause();
+            }
+            else
+            {
+                video.Play();
+                VideoPlay = 0;
+            }
+        }
+        
     }
 
     //当たり判定関数
@@ -47,10 +66,11 @@ public class GoalManager : MonoBehaviour
             //AnimationOff
             player.GetComponent<Animator>().enabled = false;
 
-            //text内容をGOALに変更する
-            //text.GetComponent<Text>().text = "GOAL\n画面クリックでリスタート";
-            //text.SetActive(true);
             Image.SetActive(true);
+            VideoPlane.SetActive(true);
+            VideoPlay++;
+
+            Destroy(Time.gameObject);
 
             //Goal判定をtrueにする
             isGoal = true;
