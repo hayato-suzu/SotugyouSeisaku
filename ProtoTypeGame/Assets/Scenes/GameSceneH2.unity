@@ -2768,7 +2768,7 @@ GameObject:
   - component: {fileID: 246622207}
   - component: {fileID: 246622206}
   m_Layer: 0
-  m_Name: Ground (15)
+  m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2782,11 +2782,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 246622204}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.71, y: 6.2, z: 15.03}
-  m_LocalScale: {x: 46, y: 1, z: 25}
+  m_LocalPosition: {x: -4.153248, y: -33.83336, z: 3.5616837}
+  m_LocalScale: {x: 46, y: 1, z: 26}
   m_Children: []
-  m_Father: {fileID: 800060409}
-  m_RootOrder: 26
+  m_Father: {fileID: 1329259946}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &246622206
 BoxCollider:
@@ -9844,7 +9844,6 @@ Transform:
   - {fileID: 292128233}
   - {fileID: 1844931040}
   - {fileID: 1164871974}
-  - {fileID: 246622205}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17418,6 +17417,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 388643713}
+  - {fileID: 246622205}
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18381,7 +18381,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394643178}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.16, y: 1, z: -18.297}
+  m_LocalPosition: {x: -15.16, y: 1, z: 83.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 275533658}
@@ -18396,7 +18396,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394643178}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 80c9ae81ac87fd44b8e3b72fc0e2e532, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 204a3da44ca491549b539711399248ac, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
