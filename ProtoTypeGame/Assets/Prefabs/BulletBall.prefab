@@ -63,6 +63,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 18d47aed9cc32e540a1c40933134bd8a, type: 2}
+  - {fileID: 2100000, guid: ca6d0976386f158489c50c60d33dc0e0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -125,4 +126,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cb6645a04cde245a6ab115ee0f462b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounce: 10
+  bounceSpeed: 30
+  bounceVectorMultiple: 2
