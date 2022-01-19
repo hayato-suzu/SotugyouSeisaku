@@ -28,7 +28,7 @@ public class EndScript : MonoBehaviour
 
     public void ButtonStart()
     {
-        SceneManager.LoadScene("SelectScene2");
+        SceneManager.LoadScene("SelectScene");
     }
 
     //ƒV[ƒ“‚ğÄ“Ç‚İ‚İ
