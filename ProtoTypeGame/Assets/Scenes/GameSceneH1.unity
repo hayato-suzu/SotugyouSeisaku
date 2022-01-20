@@ -5753,7 +5753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeText: {fileID: 443704020}
-  limit: 15
+  limit: 100
   text: {fileID: 1862677110}
   player: {fileID: 2084360083}
 --- !u!4 &568964363
