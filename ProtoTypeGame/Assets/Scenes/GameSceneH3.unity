@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 8712325486579451189, guid: b275443dda409ad4d863a2bd35fbcd40, type: 3}
-  time: 2
+  time: 0.45
   destroytime: 6.75
 --- !u!65 &2647825
 BoxCollider:
@@ -182,7 +182,7 @@ BoxCollider:
   m_GameObject: {fileID: 2647822}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -4179,7 +4179,7 @@ PrefabInstance:
       objectReference: {fileID: 2084360083}
     - target: {fileID: 1566449766393452245, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_Name
-      value: DeadWall (2)
+      value: DeadWall
       objectReference: {fileID: 0}
     - target: {fileID: 4729471177950148889, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_RootOrder
@@ -4932,7 +4932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 8712325486579451189, guid: b275443dda409ad4d863a2bd35fbcd40, type: 3}
-  time: 2
+  time: 0.3
   destroytime: 6.75
 --- !u!65 &378333018
 BoxCollider:
@@ -4943,7 +4943,7 @@ BoxCollider:
   m_GameObject: {fileID: 378333015}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -7870,7 +7870,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &541291822
 Transform:
   m_ObjectHideFlags: 0
@@ -9064,7 +9064,7 @@ PrefabInstance:
       objectReference: {fileID: 2084360083}
     - target: {fileID: 1566449766393452245, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_Name
-      value: DeadWall (7)
+      value: DeadWall
       objectReference: {fileID: 0}
     - target: {fileID: 4729471177950148889, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_RootOrder
@@ -15391,7 +15391,7 @@ PrefabInstance:
       objectReference: {fileID: 2084360083}
     - target: {fileID: 1566449766393452245, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_Name
-      value: DeadWall (4)
+      value: DeadWall
       objectReference: {fileID: 0}
     - target: {fileID: 4729471177950148889, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_RootOrder
@@ -17163,7 +17163,7 @@ PrefabInstance:
       objectReference: {fileID: 2084360083}
     - target: {fileID: 1566449766393452245, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_Name
-      value: DeadWall (8)
+      value: DeadWall
       objectReference: {fileID: 0}
     - target: {fileID: 4729471177950148889, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_RootOrder
@@ -17632,7 +17632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 8712325486579451189, guid: b275443dda409ad4d863a2bd35fbcd40, type: 3}
-  time: 2
+  time: 0.6
   destroytime: 6.75
 --- !u!65 &1169010830
 BoxCollider:
@@ -17643,7 +17643,7 @@ BoxCollider:
   m_GameObject: {fileID: 1169010827}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -18908,7 +18908,7 @@ PrefabInstance:
       objectReference: {fileID: 2084360083}
     - target: {fileID: 1566449766393452245, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_Name
-      value: DeadWall (11)
+      value: DeadWall
       objectReference: {fileID: 0}
     - target: {fileID: 4729471177950148889, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_RootOrder
@@ -19499,7 +19499,7 @@ PrefabInstance:
       objectReference: {fileID: 2084360083}
     - target: {fileID: 1566449766393452245, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_Name
-      value: DeadWall (5)
+      value: DeadWall
       objectReference: {fileID: 0}
     - target: {fileID: 4729471177950148889, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_RootOrder
@@ -25909,7 +25909,7 @@ PrefabInstance:
       objectReference: {fileID: 2084360083}
     - target: {fileID: 1566449766393452245, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_Name
-      value: DeadWall (9)
+      value: DeadWall
       objectReference: {fileID: 0}
     - target: {fileID: 4729471177950148889, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_RootOrder
@@ -26003,7 +26003,7 @@ PrefabInstance:
       objectReference: {fileID: 2084360083}
     - target: {fileID: 1566449766393452245, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_Name
-      value: DeadWall (3)
+      value: DeadWall
       objectReference: {fileID: 0}
     - target: {fileID: 4729471177950148889, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_RootOrder
@@ -26347,7 +26347,7 @@ PrefabInstance:
       objectReference: {fileID: 2084360083}
     - target: {fileID: 1566449766393452245, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_Name
-      value: DeadWall (12)
+      value: DeadWall
       objectReference: {fileID: 0}
     - target: {fileID: 4729471177950148889, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_RootOrder
@@ -26585,7 +26585,7 @@ PrefabInstance:
       objectReference: {fileID: 2084360083}
     - target: {fileID: 1566449766393452245, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_Name
-      value: DeadWall (6)
+      value: DeadWall
       objectReference: {fileID: 0}
     - target: {fileID: 4729471177950148889, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_RootOrder
@@ -28562,7 +28562,7 @@ PrefabInstance:
       objectReference: {fileID: 2084360083}
     - target: {fileID: 1566449766393452245, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_Name
-      value: DeadWall (10)
+      value: DeadWall
       objectReference: {fileID: 0}
     - target: {fileID: 4729471177950148889, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_RootOrder
@@ -29434,7 +29434,7 @@ PrefabInstance:
       objectReference: {fileID: 2084360083}
     - target: {fileID: 1566449766393452245, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_Name
-      value: DeadWall (1)
+      value: DeadWall
       objectReference: {fileID: 0}
     - target: {fileID: 4729471177950148889, guid: 3e5cb60704860cd489e6bee75ab998b3, type: 3}
       propertyPath: m_RootOrder
