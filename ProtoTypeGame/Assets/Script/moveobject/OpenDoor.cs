@@ -5,6 +5,7 @@ using UnityEngine;
 public class OpenDoor : MonoBehaviour
 {
     public GameObject openWall;
+    public AudioClip se;
 
     public void OnMouseDown()
     {
@@ -13,19 +14,11 @@ public class OpenDoor : MonoBehaviour
 
     IEnumerator Open()
     {
+        AudioSource.PlayClipAtPoint(se, transform.position);
         for (int i = 0; i < 5; i++)
         {
             openWall.transform.position = openWall.transform.position += new Vector3(1, 0, 0);
             yield return new WaitForSeconds(0.05f);
         }
-        //Invoke("Reset", 5.0f);
     }
-
-    //private void Reset()
-    //{
-    //    for (int i = 0; i < 5; i++)
-    //    {
-    //        openWall.transform.position = openWall.transform.position -= new Vector3(1, 0, 0);
-    //    }
-    //}
 }

@@ -49,10 +49,10 @@ public class DeadGround : MonoBehaviour
     {
         if (other.gameObject.name == player.name)
         {
-
             //ゲームオーバー
             restart.PrintGameOver();
         }
+        Destroy(this);
     }
 
     //シーンを再読み込み

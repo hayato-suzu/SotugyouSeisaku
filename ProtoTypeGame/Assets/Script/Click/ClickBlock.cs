@@ -8,6 +8,8 @@ public class ClickBlock : MonoBehaviour
 
     public float time = 5;
 
+    public AudioClip se;
+
     private void Start()
     {
         //スタート時消しとく
@@ -16,6 +18,7 @@ public class ClickBlock : MonoBehaviour
 
     private void OnMouseDown()
     {
+        AudioSource.PlayClipAtPoint(se, transform.position);
         //あるオブジェクトをマウスで押したとき表示
         invisiblefloor.SetActive(true);
 
