@@ -11786,6 +11786,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bgm: {fileID: 8300000, guid: 1d4a3cbde72f8a247b0a05018010884d, type: 3}
+  Restartimage: {fileID: 52169469}
+  Goalimage: {fileID: 1746043352}
 --- !u!82 &849096266
 AudioSource:
   m_ObjectHideFlags: 0
@@ -22627,7 +22629,7 @@ MonoBehaviour:
   speed: 0.005
   max_x: 10
   player: {fileID: 2101844281}
-  image: {fileID: 0}
+  image: {fileID: 52169469}
 --- !u!1 &1550455934
 GameObject:
   m_ObjectHideFlags: 0
