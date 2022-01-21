@@ -6,7 +6,11 @@ public class BgmScript : MonoBehaviour
 {
 
     [SerializeField] AudioClip bgm = null;
+    [SerializeField] GameObject Restartimage;
+    [SerializeField] GameObject Goalimage;
     AudioSource Audio;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +24,12 @@ public class BgmScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Restartimage.activeSelf==true || Goalimage.activeSelf == true)
+        {
+            Audio.Stop();
+        }
     }
+
+
+
 }
