@@ -26111,6 +26111,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bgm: {fileID: 8300000, guid: 1d4a3cbde72f8a247b0a05018010884d, type: 3}
+  Restartimage: {fileID: 1235751284}
+  Goalimage: {fileID: 530505699}
 --- !u!82 &1675291913
 AudioSource:
   m_ObjectHideFlags: 0
