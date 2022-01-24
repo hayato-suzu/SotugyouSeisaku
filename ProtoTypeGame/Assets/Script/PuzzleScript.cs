@@ -29,6 +29,13 @@ public class PuzzleScript : MonoBehaviour
     [Tooltip("生成する範囲B")]
     public Transform RangeB;
 
+    [SerializeField]
+    [Tooltip("再生するSE")]
+    public AudioClip buttonSe;
+
+    //音データの再生装置
+    private AudioSource Audio;
+
     //説明のテキスト
     public Text puzzlemessage;
     //カウントテキスト
@@ -44,6 +51,7 @@ public class PuzzleScript : MonoBehaviour
     private void Start()
     {
         PuzzlePanel.SetActive(false);
+        Audio = gameObject.AddComponent<AudioSource>();
     }
 
     private void Update()
@@ -58,6 +66,7 @@ public class PuzzleScript : MonoBehaviour
         puzzlemessage.text = "二個まで生成できます";
         CountText.text = "あと" + CubeCountMax + "個";
         PuzzlePanel.SetActive(true);
+        Audio.PlayOneShot(buttonSe);
     }
 
     //リセットボタン
@@ -69,6 +78,7 @@ public class PuzzleScript : MonoBehaviour
 
         }
         CubeCount = 0;
+        Audio.PlayOneShot(buttonSe);
     }
     //赤ボタン
     public void RedButtonClick()
@@ -82,6 +92,7 @@ public class PuzzleScript : MonoBehaviour
             CreateCube[CubeCount] = Instantiate(RedCube, new Vector3(x, y, z), RedCube.transform.rotation);
             CubeCount++;
         }
+        Audio.PlayOneShot(buttonSe);
     }
     //青ボタン
     public void BlueButtonClick()
@@ -96,6 +107,8 @@ public class PuzzleScript : MonoBehaviour
             CreateCube[CubeCount] = Instantiate(BlueCube, new Vector3(x, y, z), BlueCube.transform.rotation);
             CubeCount++;
         }
+        Audio.PlayOneShot(buttonSe);
+
     }
     //緑ボタン
     public void GreenButtonClick()
@@ -109,11 +122,13 @@ public class PuzzleScript : MonoBehaviour
             CreateCube[CubeCount] = Instantiate(GreenCube, new Vector3(x, y, z), GreenCube.transform.rotation);
             CubeCount++;
         }
+        Audio.PlayOneShot(buttonSe);
     }
     //パネルを消すボタン
     public void BackButton()
     {
         PuzzlePanel.SetActive(false);
+        Audio.PlayOneShot(buttonSe);
     }
 
 }
