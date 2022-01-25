@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class SelectScript : MonoBehaviour
 {
+    private void Start()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     //ボタンを押すと難易度ノーマルのGameSceneに移る
     public void OnClickNormalButton()
     {
