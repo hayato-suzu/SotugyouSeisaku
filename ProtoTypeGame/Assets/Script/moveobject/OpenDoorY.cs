@@ -5,6 +5,7 @@ using UnityEngine;
 public class OpenDoorY : MonoBehaviour
 {
     public GameObject openWall;
+    public AudioClip se;
 
     public void OnMouseDown()
     {
@@ -13,6 +14,7 @@ public class OpenDoorY : MonoBehaviour
 
     IEnumerator Open()
     {
+        AudioSource.PlayClipAtPoint(se, transform.position);
         for (int i = 0; i < 5; i++)
         {
             //YŽ²
