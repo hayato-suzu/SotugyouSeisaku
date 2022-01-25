@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class StartScript : MonoBehaviour
 {
+    private void Start()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     //ƒ{ƒ^ƒ“‚ð‰Ÿ‚·‚ÆGameScene‚ÉˆÚ‚é
     public void OnClickStartButton()
     {
