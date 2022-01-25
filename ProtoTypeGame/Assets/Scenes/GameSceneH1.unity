@@ -10335,7 +10335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c7d28317fbfc024e9da49393aff84ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bgm: {fileID: 8300000, guid: 1d4a3cbde72f8a247b0a05018010884d, type: 3}
+  bgm: {fileID: 8300000, guid: 74f4a685ce6bf73469c47c68dbb85fc7, type: 3}
   Restartimage: {fileID: 13359776}
   Goalimage: {fileID: 543118621}
 --- !u!82 &921766544
