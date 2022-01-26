@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SeScript : MonoBehaviour
+public class OnCollisonEnterSe : MonoBehaviour
 {
     //音源を入れる変数
-    [SerializeField] AudioClip se1 ;
+    [SerializeField] AudioClip se1;
 
     //音データの再生装置
     private AudioSource Audio;
@@ -19,15 +19,14 @@ public class SeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag=="Player")
+        if (collision.gameObject.tag == "Player")
         {
             Audio.PlayOneShot(se1);
         }
     }
-
 }
